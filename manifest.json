@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "QRRR - QR Resource Reform",
+  "description": "QR Resource Reform",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background" : {
+    "scripts": ["qrr-background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "QRRRRRRRRRRRRRRRRRRRRRRRRR!"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": [
+        "jquery.min.js",
+        "jquery.qrcode.min.js",
+        "qrr-contentscript.js"
+      ]
+    }
+  ]
+}
