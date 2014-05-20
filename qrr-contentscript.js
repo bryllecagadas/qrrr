@@ -24,6 +24,7 @@
 			.css("height", "100%")
 			.css("top", "0")
 			.css("left", "0")
+			.css("z-index", 99999)
 		.click(function() {
 			$(this).remove();
 			$("body").css("overflow", "auto");
